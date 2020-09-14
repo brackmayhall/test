@@ -1,54 +1,33 @@
 <template>
-    <div>
-
-
-<b-card-group class="pt-4 justify-content-md-center">
-    <b-col cols="3" >
-      <b-card bg-variant="light" header="Fund Managers" class="text-center font-weight-bold">
-        <p class="h1 mb-2"><b-icon icon="headset"></b-icon></p>
-        <b-card-text>Fund Managers</b-card-text>
-         <b-button variant="primary" to="fundmanagers">Go To Fund Managers</b-button>
-      </b-card>
-    </b-col>
-      <b-col cols="3">
-      <b-card bg-variant="light" header="Fund Managers" class="text-center font-weight-bold">
-        <p class="h1 mb-2"><b-icon icon="headset"></b-icon></p>
-        <b-card-text>Fund Managers</b-card-text>
-         <b-button variant="primary" to="fundmanagers">Go To Fund Managers</b-button>
-      </b-card>
-    </b-col>
-    <b-col cols="3" >
-      <b-card bg-variant="light" header="Fund Managers" class="text-center font-weight-bold">
-        <p class="h1 mb-2"><b-icon icon="headset"></b-icon></p>
-        <b-card-text>Fund Managers</b-card-text>
-         <b-button variant="primary" to="fundmanagers">Go To Fund Managers</b-button>
-      </b-card>
-    </b-col>
-</b-card-group>
-
-<b-card-group class="pt-4 justify-content-md-center">
-
-      <b-col cols="3">
-      <b-card bg-variant="light" header="Fund Managers" class="text-center font-weight-bold">
-        <p class="h1 mb-2"><b-icon icon="headset"></b-icon></p>
-        <b-card-text>Fund Managers</b-card-text>
-         <b-button variant="primary" to="fundmanagers">Go To Fund Managers</b-button>
-      </b-card>
-    </b-col>
-    <b-col cols="3" >
-      <b-card bg-variant="light" header="Fund Managers" class="text-center font-weight-bold">
-        <p class="h1 mb-2"><b-icon icon="headset"></b-icon></p>
-        <b-card-text>Fund Managers</b-card-text>
-         <b-button variant="primary" to="fundmanagers">Go To Fund Managers</b-button>
-      </b-card>
-    </b-col>
-</b-card-group>
-
-
-
+  <div> 
     </div>
 </template>
 
 <script>
+  import axios from 'axios';
+  const API_URL = 'api url here';
+  export default {
+    components: {
+    },
+    name: "FundManagers",
+    data() {
+      return {
+
+    }
+  },
+
+
+  beforeCreate: function () {
+      // axios("fundmanagers lambda here")
+      // .then(response => {
+      //   this.fundManagers = response.data[0].value;
+      // })
+  },
+  mounted: function() {
+
+  }
+  }
 </script>
 
+<style lang="scss">
+</style>
